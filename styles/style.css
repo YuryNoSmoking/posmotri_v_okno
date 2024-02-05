@@ -40,21 +40,23 @@ ol {
 .page {
   /* body*/
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
   /* main */
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   gap: 30px;
+  inline-size: 1140px;
 }
 
 /*---------------------------- section result ----------------------*/
 
 .result {
   inline-size: 711px;
-  block-size: 456px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -62,21 +64,22 @@ ol {
 
 .result__video-container {
   inline-size: inherit;
-  block-size: inherit;
+  padding: 0 0 8px 0;
   position: relative;
 }
 
 .result__video {
   inline-size: inherit;
+  object-fit: contain;
+  object-position: center;
 }
+
 /*---------------------- forms ----------------------*/
 
 .search-form {
   display: flex;
-  align-items: flex-end;
   justify-content: space-between;
-  padding-block-start: 10px;
-  gap: 20px;
+  align-items: flex-end;
 }
 
 .search-form__fieldset {
@@ -84,11 +87,14 @@ ol {
 }
 
 .search-form__fieldset:nth-of-type(2) {
-  border: none;
-  flex-grow: 1;
+  /* border: none; */
+  /* flex-grow: 1; */
+  display: flex;
+  flex-direction: column;
 }
 
 .search-form__fieldset-title {
+  padding: 0 0 5px 0;
   color: #fff;
   font-family:
     'Fira Sans Condensed',
@@ -108,13 +114,9 @@ ol {
   font-weight: 400;
 }
 
-.search-form__fieldset-title {
-  padding: 0 0 5px 0;
-}
-
-.search-form__fieldset-title:nth-of-type(2) {
-  padding: 0 0 5px 20px;
-}
+/* .search-form__fieldset:nth-of-type(2) {
+  padding-block-end: 0;
+} */
 
 .search-form__label {
   width: fit-content;
@@ -124,6 +126,13 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  display: flex;
+  align-items: flex-start;
+  /* border: 1px solid #fff; временная обводка */
+}
+
+.search-form__label-text {
+  line-height: 1.5;
 }
 
 .search-form__textfield {
@@ -139,6 +148,14 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  appearance: none;
+}
+.search-form__textfield:focus {
+  outline: none;
+}
+
+.search-form__textfield:focus-visible {
+  outline: 1px solid #fff;
 }
 
 .search-form__textfield::placeholder {
@@ -156,31 +173,28 @@ ol {
 
 .search-form__checkbox-list {
   display: flex;
-  justify-content: space-evenly;
+  column-gap: 10px;
+  justify-content: center;
 }
 
 .search-form__pseudo-checkbox {
-  display: inline-block;
+  display: flex;
   inline-size: 19px;
   block-size: 19px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 6px;
 }
 
-.search-form__submit-button {
-  inline-size: 194px;
-  block-size: 34px;
-  background-color: transparent;
-  color: #fff;
-  text-align: center;
-  font-family: 'Fira Sans Condensed';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.button {
-  border: 1px solid #fff;
+.search-form__pseudo-checkbox:checked {
+  content: '';
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background-color: #fff;
 }
 
 .visually-hidden {
@@ -193,9 +207,34 @@ ol {
   white-space: nowrap;
 }
 
+/*-------------------------- BUTTON ----------------------*/
+
+.search-form__submit-button {
+  inline-size: 194px;
+}
+
+.button {
+  block-size: 34px;
+  border: 1px solid #fff;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: 'Fira Sans Condensed';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.more-button {
+  width: 100%;
+}
+
 /*---------------------------- section content details ----------------------*/
 .content__details {
-  /* block-size: 100%;   */
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .title {
@@ -232,8 +271,7 @@ ol {
 }
 
 .content__list-item {
-  inline-size: 399px;
-  padding-block-start: 20px;
+  padding-block-end: 35px;
 }
 
 .content__card-link {
@@ -244,6 +282,7 @@ ol {
 .content__video-card {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .content__video-card-title {
@@ -273,5 +312,4 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
-  object-fit: cover;
 }
