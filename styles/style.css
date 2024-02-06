@@ -61,7 +61,7 @@ ol {
 }
 
 /*---------------------------- section result ----------------------*/
-
+/*-------------- video --------------*/
 .result {
   inline-size: 711px;
   display: flex;
@@ -81,7 +81,7 @@ ol {
   object-position: center;
 }
 
-/*---------------------- forms ----------------------*/
+/*------------ forms --------------*/
 
 .search-form {
   display: flex;
@@ -365,7 +365,7 @@ ol {
 }
 
 .content__list-item {
-  padding-block-end: 35px;
+  padding-block-end: 22px;
 }
 
 .content__card-link {
