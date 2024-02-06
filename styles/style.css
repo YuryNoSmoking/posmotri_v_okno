@@ -16,7 +16,19 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -41,7 +53,6 @@ ol {
 }
 
 .content {
-  /* main */
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -111,7 +122,19 @@ ol {
 .search-form__label {
   width: fit-content;
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -147,7 +170,19 @@ ol {
   border-inline-end: transparent;
   background-color: transparent;
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'Fira Sans Condensed';
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +199,19 @@ ol {
 
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-family: 'Fira Sans Condensed';
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -173,6 +220,10 @@ ol {
 
 .search-form__textfield:focus {
   border: 1px solid #fff;
+}
+
+.search-form__checkbox {
+  appearance: none;
 }
 
 .search-form__checkbox-list {
@@ -233,7 +284,19 @@ ol {
   background-color: transparent;
   color: #fff;
   text-align: center;
-  font-family: 'Fira Sans Condensed';
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -256,7 +319,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: 99%;
+  margin: 2px;
 }
 
 /*---------------------------- section content details ----------------------*/
@@ -353,7 +417,19 @@ ol {
 
 .content__video-card-description {
   color: #fff;
-  font-family: 'Fira Sans Condensed';
+  font-family:
+    'Fira Sans Condensed',
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Open Sans',
+    'Helvetica Neue',
+    sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -364,5 +440,5 @@ ol {
 .content__video-card-thumbnail {
   inline-size: 194px;
   block-size: 103px;
-  image
+  object-fit: cover;
 }
