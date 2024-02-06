@@ -16,19 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -77,7 +65,8 @@ ol {
 
 .result__video {
   inline-size: inherit;
-  object-fit: contain;
+  block-size: 386px;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -93,27 +82,10 @@ ol {
   border: none;
 }
 
-.search-form__fieldset:nth-of-type(2) {
-  display: flex;
-  flex-direction: column;
-}
-
 .search-form__fieldset-title {
   padding-block-end: 5px;
   color: #fff;
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -122,19 +94,7 @@ ol {
 .search-form__label {
   width: fit-content;
   color: #fff;
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -144,11 +104,11 @@ ol {
   padding: 1px;
 }
 
-.search-form__label:focus {
+.search-form__label:has(:focus) {
   outline: none;
 }
 
-.search-form__label:focus-visible {
+.search-form__label:has(:focus-visible) {
   outline: 1px solid #fff;
 }
 
@@ -169,20 +129,8 @@ ol {
   border-inline-start: transparent;
   border-inline-end: transparent;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.7);
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -193,37 +141,13 @@ ol {
   outline: none;
 }
 
-.search-form__textfield:focus-visible {
-  outline: 1px solid #fff;
-}
-
 .search-form__textfield::placeholder {
   color: rgba(255, 255, 255, 0.7);
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.search-form__textfield:focus {
-  border: 1px solid #fff;
-}
-
-.search-form__checkbox {
-  appearance: none;
 }
 
 .search-form__checkbox-list {
@@ -242,10 +166,6 @@ ol {
   border: 1px solid #fff;
   cursor: pointer;
   margin-inline-end: 5px;
-}
-
-.search-form__pseudo-checkbox:focus-visible {
-  border: 1px solid #fff;
 }
 
 .search-form__pseudo-checkbox::before {
@@ -278,25 +198,13 @@ ol {
 }
 
 .button {
-  block-size: 34px;
+  min-block-size: 34px;
   border: 1px solid #fff;
   cursor: pointer;
   background-color: transparent;
   color: #fff;
   text-align: center;
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -331,19 +239,7 @@ ol {
 }
 
 .title {
-  font-family:
-    Oswald,
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: Oswald, system-ui, sans-serif;
   color: #fff;
   font-size: 75px;
   font-style: normal;
@@ -354,7 +250,7 @@ ol {
 }
 
 .content__accent {
-  opacity: 0.2;
+  color: #545050;
 }
 
 .content__list {
@@ -406,34 +302,22 @@ ol {
 
 .content__video-card-title {
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, system-ui,sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
-  line-height: 100%; /* 30px */
+  line-height: 100%;
   text-transform: uppercase;
   padding-inline-end: 5px;
 }
 
 .content__video-card-description {
   color: #fff;
-  font-family:
-    'Fira Sans Condensed',
-    system-ui,
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    'Open Sans',
-    'Helvetica Neue',
-    sans-serif;
+  font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 16.2px; /* 90% */
+  line-height: 16.2px;
   padding-block-start: 5px;
 }
 
