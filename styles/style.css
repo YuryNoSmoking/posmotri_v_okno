@@ -56,11 +56,12 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  gap: 10px;
 }
 
 .result__video-container {
   inline-size: 711px;
-  padding: 0 0 10px 0;
+  /* padding: 0 0 10px 0; */
   position: relative;
 }
 
