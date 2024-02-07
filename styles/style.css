@@ -13,8 +13,8 @@ html {
   justify-content: center;
   align-items: center;
   inline-size: 1140px;
-  block-size: 534px;
-  margin: 133px auto;
+  block-size: 100%;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', system-ui, sans-serif;
   font-size: 18px;
